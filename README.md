@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# Macquarie University Thesis Quarto Template <img src="https://user-images.githubusercontent.com/15133161/200966938-ba6f8413-fa77-4ccb-b16d-d7cf14926057.png" align ="right" alt="" width ="150"/>
+# Macquarie University Thesis Quarto Template <img src="https://user-images.githubusercontent.com/15133161/200966938-ba6f8413-fa77-4ccb-b16d-d7cf14926057.png" align="right" width="150"/>
 
 This project is our attempt to bring our `thesisdownmq` package to
 everyone! Unlike R Markdown and our previous work on `thesisdownmq`,
@@ -9,6 +9,10 @@ Quarto doesn’t have a dependency or requirement for `R`. Quarto was
 developed to be multilingual, beginning with `R`, `Python`,
 `Javascript`, and `Julia`, with the idea that it will work even for
 languages that don’t yet exist.
+
+Please note that most of the Quarto Project structure we utilised here
+was inspired by the [Monash University Thesis Template of
+@robjhyndman.](https://github.com/numbats/monash-quarto-thesis)
 
 Here is a preview on what the thesis looks like:
 ![](https://github.com/thomas-fung/mq-thesis-quarto/assets/15133161/a3572f0c-cffb-4e0d-9b22-dd8a1c22a7a7.png)
