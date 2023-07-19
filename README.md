@@ -1,14 +1,17 @@
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# Macquarie University Quarto Thesis Template
+# Macquarie University Thesis Quarto Template <img src="https://user-images.githubusercontent.com/15133161/200966938-ba6f8413-fa77-4ccb-b16d-d7cf14926057.png" align ="right" alt="" width ="150"/>
 
 This project is our attempt to bring our `thesisdownmq` package to
-everyone! Unlike R Markdown and our previous work on `thesisdown`,
+everyone! Unlike R Markdown and our previous work on `thesisdownmq`,
 Quarto doesn’t have a dependency or requirement for `R`. Quarto was
 developed to be multilingual, beginning with `R`, `Python`,
 `Javascript`, and `Julia`, with the idea that it will work even for
 languages that don’t yet exist.
+
+Here is a preview on what the thesis looks like:
+![](https://github.com/thomas-fung/mq-thesis-quarto/assets/15133161/a3572f0c-cffb-4e0d-9b22-dd8a1c22a7a7.png)
 
 Currently, the PDF version is fully-functional (The word, gitbook and
 epub versions are developmental, have no templates behind them, and are
@@ -29,46 +32,61 @@ instructions to install the necessary packages after downloading the
 (somewhat large) installer files. You may need to install a few extra
 packages on your first attempt to knit as well.
 
+An example of the thesis template can be downloaded from here:
+https://github.com/thomas-fung/mq-thesis-quarto/blob/main/examples/sample.pdf.
+
 If you are simply looking for a Macquarie University thesis LaTeX
 template, you should check this out:
 https://github.com/aalexei/mqthesis.
 
-### Using thesisdowndmq from Thomas Fung’s GitHub
+### Installing Quarto
 
-To use **thesisdowndmq** from within RStudio:
+Use the following link to install Quarto:
 
-1)  Install the latest RStudio and rmarkdown.
+https://quarto.org/docs/get-started/
 
-2)  Install the **bookdown** and **thesisdownmq** packages:
+Notice that it should come with the more recent versions of `RStudio`.
 
-``` s
-install.packages("devtools")
-install.packages("bookdown")
-devtools::install_github("thomas-fung/thesisdownmq")
+### Installing the template from Thomas Fung’s GitHub
+
+You can use this as a template to create a report. To do this, use the
+following command in your Terminal:
+
+``` bash
+quarto use template thomas-fung/mq-thesis-quarto
 ```
 
-3)  Use the New R Markdown dialog to select MQ Thesis:
+This will install the extension and download a bunch of qmd files
+(basically one per chapter) that you can use as a starting place for
+your thesis.
 
-![New R Markdown](thesis_rmd.png)
+To compile your thesis into a pdf, use the following command in your
+terminal
 
-Note that this will currently only Knit if you name the directory index
-as shown above.
+``` bash
+quarto render --to mqthesis-pdf
+```
 
-4)  Knit the index.Rmd file to get the book in PDF format.
+or if you are an R user, type the following command in your R console
 
-5)  Edit the individual chapter R Markdown files as you wish and then
-    re-run step (4) again.
+``` bash
+library(quarto)
+quarto_render(output_format = "mqthesis-pdf")
+```
+
+Please notice that the file `_quarto.yml` contains all the reuqired
+`YAML` information of the document.
 
 ## How to cite
 
 ``` bibtex
-@misc{thesisdownmq2019,
-  author = {Fung, Thomas and Wishart, Justin},
-  title = {thesisdownmq},
-  year = {2019},
+@misc{mqthesisquarto2023,
+  author = {Fung, Thomas},
+  title = {Macquarie University Thesis Quarto Template},
+  year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/thomas-fung/thesisdownmq}}
+  howpublished = {\url{https://github.com/thomas-fung/mq-thesis-quarto}}
 }
 ```
 
