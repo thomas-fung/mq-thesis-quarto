@@ -1,0 +1,9 @@
+# List of Publications {-}
+
+
+* insert author list *insert paper title*. (submitted to insert journal name)
+* insert author list *insert paper title*. insert journal name **insert volume number**, insert article or page number (insert year)
+
+```{=latex}
+\mainmatter % here the regular arabic numbering starts
+```

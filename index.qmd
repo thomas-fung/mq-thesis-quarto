@@ -1,0 +1,26 @@
+```{=latex}
+\pagestyle{fancyplain} % turns page numbering back on
+\pagenumbering{roman}
+```
+
+### Copyright notice {-}
+
+<!-- A book project must contain an index.qmd file. 
+You can replace the content but you can't remove or 
+rename this file. -->
+
+> Delete following statement if not relevant.
+
+I certify that I have made all reasonable efforts to secure copyright permissions for third-party content included in this thesis and have not knowingly added copyright content to my work without the owner's permission.
+
+```{=latex}
+  \vspace*{\fill}
+  \begin{center}
+```
+
+© {{< meta author >}} {{< meta date}}
+
+```{=latex}
+  Typesetin Quarto \& \LaTeXe{}.
+\end{center}
+```

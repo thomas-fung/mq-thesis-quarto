@@ -1,0 +1,29 @@
+---
+format: gfm
+---
+
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| include: false
+# Create pdf and png version of template
+library(tidyverse)
+library(quarto)
+library(magick)
+
+# Render template
+quarto_render(input = "index.qmd")
+# Convert rendered PDF to PNG
+image_read_pdf("_book/This-is-my-thesis.pdf", pages = 1) |>
+  image_montage(geometry = "x1000+25+35", tile = 1, bg = "grey92", shadow = TRUE) |>
+  image_convert(format = "png") |>
+  image_write("examples/template.png", )
+# Move pdf to examples folder
+fs::file_copy("_book/This-is-my-thesis.pdf", "examples/template.pdf", overwrite = TRUE)
+```
+
+# Monash Thesis Template
+
+This is a Quarto template that assists you in creating a Monash University thesis. Either fork or download the repository to get started.
+
+[![](examples/template.png)](examples/template.pdf)
